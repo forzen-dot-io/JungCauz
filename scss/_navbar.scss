@@ -1,0 +1,32 @@
+@import "./config";
+
+.navbar {
+  background-color: $primary-background-color;
+  color: $secondary-text-color;
+  height: 7rem;
+  .flex {
+    justify-content: space-between;
+  }
+  ul {
+    display: flex;
+    a {
+      color: $secondary-text-color;
+      padding: 1rem;
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 4rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
