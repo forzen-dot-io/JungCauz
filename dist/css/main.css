@@ -19,7 +19,7 @@
 }
 
 .navbar {
-  background-color: #cd045a;
+  background-color: #c21e56;
   color: #f7fff7;
   height: 5rem;
 }
@@ -57,7 +57,9 @@
 
 .showcase {
   height: 400px;
-  background-color: #cd045a;
+  background: #c21e56;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c21e56), to(#a20536));
+  background-image: linear-gradient(to bottom, #c21e56, #a20536);
   color: #f7fff7;
   position: relative;
 }
@@ -90,9 +92,18 @@
   margin: 30px 0;
 }
 
-.showcase .showcase-form select, .showcase .showcase-form option {
+.showcase .showcase-form select,
+.showcase .showcase-form option {
   border: 0;
   border-bottom: 2px solid #999;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.showcase .showcase-form select:focus,
+.showcase .showcase-form option:focus {
+  outline: none;
 }
 
 .container {
@@ -138,6 +149,31 @@
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
   padding: 20px;
   margin: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: #c21e56;
+  color: #f7fff7;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  background: #a20536;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #f7fff7;
 }
 
 body {
