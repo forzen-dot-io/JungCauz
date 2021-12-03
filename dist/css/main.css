@@ -56,10 +56,13 @@
 }
 
 .showcase {
-  height: 400px;
-  background: #c21e56;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c21e56), to(#a20536));
-  background-image: linear-gradient(to bottom, #c21e56, #a20536);
+  height: 480px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c21e56), to(rgba(162, 5, 54, 0.5))), url("/../images/ifoa.jpg");
+  background: linear-gradient(to bottom, #c21e56, rgba(162, 5, 54, 0.5)), url("/../images/ifoa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
   color: #f7fff7;
   position: relative;
 }
@@ -107,7 +110,7 @@
 }
 
 .showcase::before, .showcase::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 100px;
   bottom: -75px;
@@ -281,6 +284,61 @@
   border: 1px solid #f7fff7;
 }
 
+/** Backgrounds & colored buttons */
+.bg-primary,
+.btn-primary {
+  background-color: #c21e56;
+  color: #f7fff7;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: #a20536;
+  color: #f7fff7;
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: #3f292a;
+  color: #f7fff7;
+}
+
+.bg-light,
+.btn-light {
+  background-color: #f7fff7;
+  color: #3f292a;
+}
+
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a,
+.bg-primary a,
+.btn-primary a {
+  color: #f7fff7;
+}
+
+/** Text sizes */
+.lead {
+  font-size: 20px;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
+}
+
 .stats {
   padding-top: 100px;
 }
@@ -288,7 +346,7 @@
 .stats .stats-heading {
   max-width: 640px;
   margin: auto;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .stats .grid h3 {
@@ -300,6 +358,24 @@
   font-size: 20px;
   font-weight: normal;
   color: #a20536;
+}
+
+.cloud {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a20536), to(rgba(194, 30, 86, 0.7))), url("/../images/ifoa.jpg");
+  background: linear-gradient(to bottom, #a20536, rgba(194, 30, 86, 0.7)), url("/../images/ifoa.jpg");
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 360px;
+}
+
+.cloud .grid {
+  -ms-grid-columns: 5fr 2fr;
+      grid-template-columns: 5fr 2fr;
+}
+
+.footer h1 {
+  font-weight: 700;
 }
 
 body {
