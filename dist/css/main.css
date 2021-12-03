@@ -28,6 +28,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: visible;
 }
 
 .navbar h1 {
@@ -363,7 +364,7 @@
 .cloud {
   background: -webkit-gradient(linear, left top, left bottom, from(#a20536), to(rgba(194, 30, 86, 0.7))), url("/../images/ifoa.jpg");
   background: linear-gradient(to bottom, #a20536, rgba(194, 30, 86, 0.7)), url("/../images/ifoa.jpg");
-  background-size: 150%;
+  background-size: 300%;
   background-repeat: no-repeat;
   background-position: bottom;
   height: 360px;
@@ -376,6 +377,54 @@
 
 .footer h1 {
   font-weight: 700;
+}
+
+.footer .grid {
+  -ms-grid-columns: 4fr 1fr;
+      grid-template-columns: 4fr 1fr;
+}
+
+/** Tablets and under */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cloud .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .showcase {
+    height: auto;
+  }
+  .showcase .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .showcase .showcase-form {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: auto;
+  }
+}
+
+/** Mobile */
+@media (max-width: 500px) {
+  .navbar {
+    height: 140px;
+  }
+  .navbar .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .cloud {
+    height: auto;
+  }
 }
 
 body {
