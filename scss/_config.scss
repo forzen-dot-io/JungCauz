@@ -10,3 +10,7 @@
 $primary-text-color: #333;
 $secondary-text-color: #f7fff7;
 $primary-background-color: #cd045a;
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
