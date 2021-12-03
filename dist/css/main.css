@@ -106,6 +106,20 @@
   outline: none;
 }
 
+.showcase::before, .showcase::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -60px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-2.5deg);
+  -webkit-transform: skewY(-2.5deg);
+  -moz-transform: skewY(-2.5deg);
+  -ms-transform: skewY(-2.5deg);
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
