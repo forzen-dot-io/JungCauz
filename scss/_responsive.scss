@@ -18,6 +18,9 @@
       margin: auto;
     }
   }
+  .cloud {
+    background-size: 500%;
+  }
 }
 
 /** Mobile */
@@ -32,7 +35,7 @@
       background-color: rgba(0, 0, 0, 0.1);
     }
   }
-  .cloud {
-    height: auto;
+  .stats {
+    padding: 10rem 0 5rem 0;
   }
 }
