@@ -58,8 +58,8 @@
 
 .showcase {
   height: 480px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c21e56), to(rgba(162, 5, 54, 0.5))), url("/../images/ifoa.jpg");
-  background: linear-gradient(to bottom, #c21e56, rgba(162, 5, 54, 0.5)), url("/../images/ifoa.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(#c21e56), to(rgba(162, 5, 54, 0.5))), url("/jung-cauz/images/ifoa.jpg");
+  background: linear-gradient(to bottom, #c21e56, rgba(162, 5, 54, 0.5)), url("/jung-cauz/images/ifoa.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -351,7 +351,7 @@
 
 .stats .stats-heading {
   max-width: 640px;
-  font-size: 20px;
+  font-size: 18px;
   margin: auto;
   font-weight: 400;
 }
@@ -368,12 +368,12 @@
 }
 
 .cloud {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a20536), to(rgba(194, 30, 86, 0.7))), url("/../images/ifoa.jpg");
-  background: linear-gradient(to bottom, #a20536, rgba(194, 30, 86, 0.7)), url("/../images/ifoa.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(#a20536), to(rgba(194, 30, 86, 0.7))), url("/jung-cauz/images/ifoa.jpg");
+  background: linear-gradient(to bottom, #a20536, rgba(194, 30, 86, 0.7)), url("/jung-cauz/images/ifoa.jpg");
   background-size: 300%;
   background-repeat: no-repeat;
   background-position: bottom;
-  height: 360px;
+  height: auto;
 }
 
 .cloud .grid {
@@ -411,6 +411,9 @@
         justify-self: center;
     margin: auto;
   }
+  .cloud {
+    background-size: 500%;
+  }
 }
 
 /** Mobile */
@@ -428,8 +431,8 @@
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.1);
   }
-  .cloud {
-    height: auto;
+  .stats {
+    padding: 10rem 0 5rem 0;
   }
 }
 
